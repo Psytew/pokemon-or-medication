@@ -2082,7 +2082,10 @@ var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatra
       }
     },
     submitAndReset: function submitAndReset() {
-      axios.post('/score/' + this.userid)["catch"](function (errors) {
+      axios.post('/score/' + this.userid, {
+        userid: this.userid,
+        score: this.score
+      })["catch"](function (errors) {
         if (errors.response.status === 401) {
           window.location = '/login';
         }
@@ -38022,7 +38025,7 @@ var render = function() {
             _vm._v(" "),
             _vm.incrementChecker()
               ? _c("button", { on: { click: _vm.submitAndReset } }, [
-                  _vm._v("Play Again?")
+                  _vm._v("Play Again/Save Score")
                 ])
               : _vm._e()
           ],

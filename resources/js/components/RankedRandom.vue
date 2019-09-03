@@ -13,7 +13,7 @@
                         <button v-on:click="minusOne" v-if="whichFirst" v-text="medicine"></button>
                         <button v-on:click="plusOne" v-else v-text="pokemon"></button>
                     </template>
-                    <button v-on:click="submitAndReset" v-if="incrementChecker()">Play Again?</button>
+                    <button v-on:click="submitAndReset" v-if="incrementChecker()">Play Again/Save Score</button>
                 </div>
             </div>
         </div>
@@ -61,7 +61,10 @@
                 }
             },
             submitAndReset(){
-                axios.post('/score/' + this.userid)
+                axios.post('/score/' + this.userid, {
+                    userid: this.userid,
+                    score: this.score
+                })
                     .catch(errors => {
                         if (errors.response.status === 401){
                             window.location = '/login'

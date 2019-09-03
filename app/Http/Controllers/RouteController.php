@@ -44,10 +44,15 @@ class RouteController extends Controller
     }
 
     public function leaderboard(){
-        return view('leaderboard');
+        $users = User::all();
+        return view('leaderboard', compact('users'));
     }
 
-    public function storeScore(){
-        return auth()->user()->score;
+    public function storeScore(Request $request, User $user){
+        $user = User::findOrFail(request('userid'));
+        if ($user->highscore < request('score')){
+            $user->highscore = request('score');
+            $user->save();
+        }
     }
 }
