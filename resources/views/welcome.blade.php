@@ -88,6 +88,7 @@
                     <a href="/freeplay">Free Play</a>
                     <a href="/20roundtest">20 Round Test</a>
                     <a href="/hordeBattle">Horde Battle</a>
+                    <a href="/myscores">My Scores</a>
                     <a href="/leaderboard">LeaderBoard</a>
                 </div>
             </div>
