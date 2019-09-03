@@ -15,11 +15,13 @@ Route::get('/', 'RouteController@home');
 
 Route::get('/freeplay', 'RouteController@freeplay');
 
-Route::get('/50roundtest', 'RouteController@roundTest');
+Route::get('/50roundtest', 'AuthenticatedRouteController@roundTest');
 
 Route::get('/hordeBattle', 'RouteController@hordeBattle');
 
 Route::get('/leaderboard', 'RouteController@leaderboard');
+
+Route::post('/score/{user}', 'RouteController@storeScore');
 
 Auth::routes();
 

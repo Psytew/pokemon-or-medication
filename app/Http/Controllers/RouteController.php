@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\user;
 use Illuminate\Http\Request;
 
 class RouteController extends Controller
@@ -34,8 +35,8 @@ class RouteController extends Controller
         return view('free-play');
     }
 
-    public function roundTest(){
-        return view('roundTest');
+    public function roundTest(User $user){
+        return view('roundTest', compact('user'));
     }
 
     public function hordeBattle(){
@@ -44,5 +45,9 @@ class RouteController extends Controller
 
     public function leaderboard(){
         return view('leaderboard');
+    }
+
+    public function storeScore(){
+        return auth()->user()->score;
     }
 }

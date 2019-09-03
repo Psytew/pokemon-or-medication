@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-	<p>Horde Battle</p>
+	<horde-random score=0 incorrect=0></horde-random>
 @endsection

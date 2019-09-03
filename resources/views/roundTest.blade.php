@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-	<p>Round Test</p>
+	<ranked-random userid="{{auth()->user()->id}}"score=0 incorrect=0 increment=0></ranked-random>
 @endsection

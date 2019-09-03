@@ -1890,6 +1890,215 @@ var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatra
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HordeRandom.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HordeRandom.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var pokemonAPI = __webpack_require__(/*! pokemon */ "./node_modules/pokemon/index.js");
+
+var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatral", "Panretin", "Zyloprim", "Xanax", "Hexalen", "Cordarone", "Elavil", "Exforge", "Norvasc", "Exforge", "Lotrel", "Amoxapine", "Arimidex", "Hyzaar", "Aspirin", "Tenormin", "Tenoretic", "Lipitor", "Diprolene", "Imuran", "Astepro", "Astelin", "Lioresal", "Alkaloids", "Lotensin", "Lotensin", "Tessalon", "Benzonatate", "Benztropine", "Urecholine", "Casodex", "Ziac", "Brimonidine Tartrate", "Bromocriptine", "Pulmicort", "Wellbutrin", "Buspar", "Rocaltrol", "Atacand", "Capsaicin", "Capoten", "Tegretol", "Sinemet", "Coreg", "Zyrtec", "Evoxac", "Chlordiazepoxide", "Chlorpromazine", "Chlorthalidone", "Prevalite", "Pletal", "Celexa", "Cleocin", "Klonopin", "Catapres", "Plavix", "Lotrisone", "Colestid", "Dacogen", "Focalin", "Dextroamphetamine", "Adderall", "Valium", "Voltaren", "Bentyl", "Lanoxin", "Dilacor", "Cardizem", "Lomotil", "Lonox", "Depakote", "Aricept", "Trusopt", "Cosopt", "Cardura", "Doxepin", "Vasotec", "Vaseretic", "Eplerenone", "Lexapro", "Nexium", "Estrace", "Ogen", "Lunesta", "Lodine", "Pepcid", "Plendil", "Tricor", "Lofibra", "Trilipix", "Proscar", "Diflucan", "Fluoxetine", "Prozac", "Flonase", "Lasix", "Neurontin", "Lopid", "Amaryl", "Glucotrol", "Micronase", "Glucovance", "Intuniv", "Ultravate", "Haloperidol", "Hydralazine", "Microzide", "Hydrocortisone", "Plaquenil", "Hydrea", "Hydroxyzine", "Vistaril", "Motrin", "Imatinib", "Indapamide", "DuoNeb", "Avapro", "Avalide", "Isoniazid", "Imdur", "Ismo", "Monoket", "Alaway", "Trandate", "Enulose", "Lamictal", "Prevacid", "Xalatan", "Femara", "Xopenex", "Keppra", "Xyzal", "Levoxyl", "Synthroid", "Lidocaine", "Lidoderm", "Cytomel", "Prinivil", "Zestril", "Prinzide", "Zestoretic", "Loperamide", "Claritin", "Ativan", "Cozaar", "Mevacor", "Loxapine", "Antivert", "Provera", "Mobic", "Namenda", "Glucophage", "Tapazole", "Robaxin", "Methotrexate", "Metadate", "Ritalin", "Ritalin", "Reglan", "Zaroxolyn", "Dutoprol", "Lopressor", "Glynase", "Midodrine", "Minocin", "Dynacin", "Remeron", "Elocon", "Singulair", "CellCept", "Nabumetone", "Anaprox", "Naprosyn", "Niacin", "Niaspan", "Nifedipine", "Adalat", "Nilandron", "Ortho", "Ovcon", "Pamelor", "Nystatin", "Zyprexa", "Lovaza", "Prilosec", "Zofran", "Oxandrin", "Ditropan", "Protonix", "Paxil", "Trental", "Perphenazine", "Donnatal", "Dibenzyline", "Dilantin", "Actos", "Prenatal", "K-Dur", "Mirapex", "Pravachol", "Prazosin", "Prednisone", "Mysoline", "Prochlorperazine", "Progesterone", "Rythmol", "Inderal", "Propylthiouracil", "Mestinon", "Seroquel", "Accupril", "Accuretic", "Aciphex", "Evista", "Altace", "Zantac", "Prandin", "Actonel", "Risperdal", "Exelon", "Requip", "Crestor", "Zoloft", "Revatio", "Zocor", "Aldactone", "Aldactazide", "Ortho-Cyclen", "Carafate", "Bactrim", "Septra", "Azulfidine", "Imitrex", "Prograf", "Tamoxifen", "Flomax", "Micardis", "Restoril", "Hytrin", "Vogelxo", "Zanaflex", "Detrol", "Topamax", "Qudexy", "Ultracet", "Ultram", "Mavik", "Parnate", "Desyrel", "Ortho-Tri-Cyclen", "Triamcinolone", "Dyrenium", "Dyazide", "Maxzide", "Trifluoperazine", "Trospium", "Valtrex", "Depakene", "Diovan", "Effexor", "Calan", "Isoptin", "Jantoven", "Accolate", "Sonata", "Zidovudine", "Ambien"];
+/* harmony default export */ __webpack_exports__["default"] = ({
+  beforeMount: function beforeMount() {
+    this.progress();
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  },
+  props: ['score', 'pokemon1', 'pokemon2', 'pokemon3', 'pokemon4', 'pokemon5', 'medicine', 'whichFirst', 'incorrect'],
+  methods: {
+    plusOne: function plusOne() {
+      this.score++;
+      this.pokemon1 = pokemonAPI.random();
+      this.pokemon2 = pokemonAPI.random();
+      this.pokemon3 = pokemonAPI.random();
+      this.pokemon4 = pokemonAPI.random();
+      this.pokemon5 = pokemonAPI.random();
+      this.medicine = drugs[Math.floor(Math.random() * 271)];
+      this.whichFirst = Math.floor(Math.random() * 6);
+    },
+    minusOne: function minusOne() {
+      this.incorrect++;
+      this.pokemon1 = pokemonAPI.random();
+      this.pokemon2 = pokemonAPI.random();
+      this.pokemon3 = pokemonAPI.random();
+      this.pokemon4 = pokemonAPI.random();
+      this.pokemon5 = pokemonAPI.random();
+      this.medicine = drugs[Math.floor(Math.random() * 271)];
+      this.whichFirst = Math.floor(Math.random() * 6);
+    },
+    progress: function progress() {
+      this.pokemon1 = pokemonAPI.random();
+      this.pokemon2 = pokemonAPI.random();
+      this.pokemon3 = pokemonAPI.random();
+      this.pokemon4 = pokemonAPI.random();
+      this.pokemon5 = pokemonAPI.random();
+      this.medicine = drugs[Math.floor(Math.random() * 271)];
+      this.whichFirst = Math.floor(Math.random() * 6);
+    },
+    whichSix: function whichSix(passedNumber) {
+      return passedNumber == this.whichFirst;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RankedRandom.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RankedRandom.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var pokemonAPI = __webpack_require__(/*! pokemon */ "./node_modules/pokemon/index.js");
+
+var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatral", "Panretin", "Zyloprim", "Xanax", "Hexalen", "Cordarone", "Elavil", "Exforge", "Norvasc", "Exforge", "Lotrel", "Amoxapine", "Arimidex", "Hyzaar", "Aspirin", "Tenormin", "Tenoretic", "Lipitor", "Diprolene", "Imuran", "Astepro", "Astelin", "Lioresal", "Alkaloids", "Lotensin", "Lotensin", "Tessalon", "Benzonatate", "Benztropine", "Urecholine", "Casodex", "Ziac", "Brimonidine Tartrate", "Bromocriptine", "Pulmicort", "Wellbutrin", "Buspar", "Rocaltrol", "Atacand", "Capsaicin", "Capoten", "Tegretol", "Sinemet", "Coreg", "Zyrtec", "Evoxac", "Chlordiazepoxide", "Chlorpromazine", "Chlorthalidone", "Prevalite", "Pletal", "Celexa", "Cleocin", "Klonopin", "Catapres", "Plavix", "Lotrisone", "Colestid", "Dacogen", "Focalin", "Dextroamphetamine", "Adderall", "Valium", "Voltaren", "Bentyl", "Lanoxin", "Dilacor", "Cardizem", "Lomotil", "Lonox", "Depakote", "Aricept", "Trusopt", "Cosopt", "Cardura", "Doxepin", "Vasotec", "Vaseretic", "Eplerenone", "Lexapro", "Nexium", "Estrace", "Ogen", "Lunesta", "Lodine", "Pepcid", "Plendil", "Tricor", "Lofibra", "Trilipix", "Proscar", "Diflucan", "Fluoxetine", "Prozac", "Flonase", "Lasix", "Neurontin", "Lopid", "Amaryl", "Glucotrol", "Micronase", "Glucovance", "Intuniv", "Ultravate", "Haloperidol", "Hydralazine", "Microzide", "Hydrocortisone", "Plaquenil", "Hydrea", "Hydroxyzine", "Vistaril", "Motrin", "Imatinib", "Indapamide", "DuoNeb", "Avapro", "Avalide", "Isoniazid", "Imdur", "Ismo", "Monoket", "Alaway", "Trandate", "Enulose", "Lamictal", "Prevacid", "Xalatan", "Femara", "Xopenex", "Keppra", "Xyzal", "Levoxyl", "Synthroid", "Lidocaine", "Lidoderm", "Cytomel", "Prinivil", "Zestril", "Prinzide", "Zestoretic", "Loperamide", "Claritin", "Ativan", "Cozaar", "Mevacor", "Loxapine", "Antivert", "Provera", "Mobic", "Namenda", "Glucophage", "Tapazole", "Robaxin", "Methotrexate", "Metadate", "Ritalin", "Ritalin", "Reglan", "Zaroxolyn", "Dutoprol", "Lopressor", "Glynase", "Midodrine", "Minocin", "Dynacin", "Remeron", "Elocon", "Singulair", "CellCept", "Nabumetone", "Anaprox", "Naprosyn", "Niacin", "Niaspan", "Nifedipine", "Adalat", "Nilandron", "Ortho", "Ovcon", "Pamelor", "Nystatin", "Zyprexa", "Lovaza", "Prilosec", "Zofran", "Oxandrin", "Ditropan", "Protonix", "Paxil", "Trental", "Perphenazine", "Donnatal", "Dibenzyline", "Dilantin", "Actos", "Prenatal", "K-Dur", "Mirapex", "Pravachol", "Prazosin", "Prednisone", "Mysoline", "Prochlorperazine", "Progesterone", "Rythmol", "Inderal", "Propylthiouracil", "Mestinon", "Seroquel", "Accupril", "Accuretic", "Aciphex", "Evista", "Altace", "Zantac", "Prandin", "Actonel", "Risperdal", "Exelon", "Requip", "Crestor", "Zoloft", "Revatio", "Zocor", "Aldactone", "Aldactazide", "Ortho-Cyclen", "Carafate", "Bactrim", "Septra", "Azulfidine", "Imitrex", "Prograf", "Tamoxifen", "Flomax", "Micardis", "Restoril", "Hytrin", "Vogelxo", "Zanaflex", "Detrol", "Topamax", "Qudexy", "Ultracet", "Ultram", "Mavik", "Parnate", "Desyrel", "Ortho-Tri-Cyclen", "Triamcinolone", "Dyrenium", "Dyazide", "Maxzide", "Trifluoperazine", "Trospium", "Valtrex", "Depakene", "Diovan", "Effexor", "Calan", "Isoptin", "Jantoven", "Accolate", "Sonata", "Zidovudine", "Ambien"];
+/* harmony default export */ __webpack_exports__["default"] = ({
+  beforeMount: function beforeMount() {
+    this.progress();
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  },
+  props: ['score', 'pokemon', 'medicine', 'whichFirst', 'incorrect', 'increment', 'userid'],
+  methods: {
+    plusOne: function plusOne() {
+      if (this.increment != 5) {
+        this.increment++;
+        this.score++;
+        this.pokemon = pokemonAPI.random();
+        this.medicine = drugs[Math.floor(Math.random() * 271)];
+        this.whichFirst = Math.floor(Math.random() * 2);
+      }
+    },
+    minusOne: function minusOne() {
+      if (this.increment != 5) {
+        this.increment++;
+        this.incorrect++;
+        this.pokemon = pokemonAPI.random();
+        this.medicine = drugs[Math.floor(Math.random() * 271)];
+        this.whichFirst = Math.floor(Math.random() * 2);
+      }
+    },
+    progress: function progress() {
+      this.pokemon = pokemonAPI.random();
+      this.medicine = drugs[Math.floor(Math.random() * 271)];
+      this.whichFirst = Math.floor(Math.random() * 2);
+    },
+    incrementChecker: function incrementChecker() {
+      if (this.increment == 5) {
+        return true;
+      }
+    },
+    submitAndReset: function submitAndReset() {
+      axios.post('/score/' + this.userid)["catch"](function (errors) {
+        if (errors.response.status === 401) {
+          window.location = '/login';
+        }
+      });
+      this.pokemon = pokemonAPI.random();
+      this.medicine = drugs[Math.floor(Math.random() * 271)];
+      this.whichFirst = Math.floor(Math.random() * 2);
+      this.increment = 0;
+      this.score = 0;
+      this.incorrect = 0;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -37493,6 +37702,343 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c(
+          "div",
+          { staticClass: "card" },
+          [
+            _c("div", { staticClass: "card-header" }, [
+              _vm._v("Pokemon or Medication?")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Correct: "),
+              _c("span", { domProps: { textContent: _vm._s(_vm.score) } })
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Incorrect: "),
+              _c("span", { domProps: { textContent: _vm._s(_vm.incorrect) } })
+            ]),
+            _vm._v(" "),
+            _vm.whichSix(0)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.whichSix(1)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.whichSix(2)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.whichSix(3)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.whichSix(4)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.whichSix(5)
+              ? [
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.medicine) },
+                    on: { click: _vm.plusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon1) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon2) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon3) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon4) },
+                    on: { click: _vm.minusOne }
+                  }),
+                  _vm._v(" "),
+                  _c("button", {
+                    domProps: { textContent: _vm._s(_vm.pokemon5) },
+                    on: { click: _vm.minusOne }
+                  })
+                ]
+              : _vm._e()
+          ],
+          2
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c(
+          "div",
+          { staticClass: "card" },
+          [
+            _c("div", { staticClass: "card-header" }, [
+              _vm._v("Pokemon or Medication?")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Correct: "),
+              _c("span", { domProps: { textContent: _vm._s(_vm.score) } })
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Incorrect: "),
+              _c("span", { domProps: { textContent: _vm._s(_vm.incorrect) } })
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Increment: "),
+              _c("span", { domProps: { textContent: _vm._s(_vm.increment) } })
+            ]),
+            _vm._v(" "),
+            !_vm.incrementChecker()
+              ? [
+                  _vm.whichFirst
+                    ? _c("button", {
+                        domProps: { textContent: _vm._s(_vm.pokemon) },
+                        on: { click: _vm.plusOne }
+                      })
+                    : _c("button", {
+                        domProps: { textContent: _vm._s(_vm.medicine) },
+                        on: { click: _vm.minusOne }
+                      }),
+                  _vm._v(" "),
+                  _vm.whichFirst
+                    ? _c("button", {
+                        domProps: { textContent: _vm._s(_vm.medicine) },
+                        on: { click: _vm.minusOne }
+                      })
+                    : _c("button", {
+                        domProps: { textContent: _vm._s(_vm.pokemon) },
+                        on: { click: _vm.plusOne }
+                      })
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.incrementChecker()
+              ? _c("button", { on: { click: _vm.submitAndReset } }, [
+                  _vm._v("Play Again?")
+                ])
+              : _vm._e()
+          ],
+          2
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -49655,6 +50201,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('basic-random', __webpack_require__(/*! ./components/BasicRandom.vue */ "./resources/js/components/BasicRandom.vue")["default"]);
+Vue.component('horde-random', __webpack_require__(/*! ./components/HordeRandom.vue */ "./resources/js/components/HordeRandom.vue")["default"]);
+Vue.component('ranked-random', __webpack_require__(/*! ./components/RankedRandom.vue */ "./resources/js/components/RankedRandom.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49776,6 +50324,144 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BasicRandom_vue_vue_type_template_id_448394f6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BasicRandom_vue_vue_type_template_id_448394f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/HordeRandom.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/HordeRandom.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HordeRandom.vue?vue&type=template&id=62d18558& */ "./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558&");
+/* harmony import */ var _HordeRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HordeRandom.vue?vue&type=script&lang=js& */ "./resources/js/components/HordeRandom.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _HordeRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/HordeRandom.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/HordeRandom.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/HordeRandom.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HordeRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./HordeRandom.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HordeRandom.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HordeRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./HordeRandom.vue?vue&type=template&id=62d18558& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HordeRandom.vue?vue&type=template&id=62d18558&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HordeRandom_vue_vue_type_template_id_62d18558___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/RankedRandom.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/RankedRandom.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RankedRandom.vue?vue&type=template&id=58169759& */ "./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759&");
+/* harmony import */ var _RankedRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RankedRandom.vue?vue&type=script&lang=js& */ "./resources/js/components/RankedRandom.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _RankedRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/RankedRandom.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/RankedRandom.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/RankedRandom.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RankedRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./RankedRandom.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RankedRandom.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RankedRandom_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./RankedRandom.vue?vue&type=template&id=58169759& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RankedRandom.vue?vue&type=template&id=58169759&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_RankedRandom_vue_vue_type_template_id_58169759___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

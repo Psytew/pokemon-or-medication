@@ -21,6 +21,10 @@ window.Vue = require('vue');
 
 Vue.component('basic-random', require('./components/BasicRandom.vue').default);
 
+Vue.component('horde-random', require('./components/HordeRandom.vue').default);
+
+Vue.component('ranked-random', require('./components/RankedRandom.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -28,5 +32,5 @@ Vue.component('basic-random', require('./components/BasicRandom.vue').default);
  */
 
 const app = new Vue({
-    el: '#app',
+    el: '#app'
 });

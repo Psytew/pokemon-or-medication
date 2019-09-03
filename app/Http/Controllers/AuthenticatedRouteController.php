@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\user;
 use Illuminate\Http\Request;
 
 class AuthenticatedRouteController extends Controller
@@ -13,5 +14,9 @@ class AuthenticatedRouteController extends Controller
 
     public function myscores(){
         return view('myscores');
+    }
+
+    public function roundTest(User $user){
+        return view('roundTest', compact('user'));
     }
 }
