@@ -33,4 +33,16 @@ class RouteController extends Controller
     public function freePlay(){
         return view('free-play');
     }
+
+    public function roundTest(){
+        return view('roundTest');
+    }
+
+    public function hordeBattle(){
+        return view('hordeBattle');
+    }
+
+    public function leaderboard(){
+        return view('leaderboard');
+    }
 }

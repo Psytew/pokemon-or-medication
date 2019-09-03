@@ -15,13 +15,11 @@ Route::get('/', 'RouteController@home');
 
 Route::get('/freeplay', 'RouteController@freeplay');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/50roundtest', 'RouteController@roundTest');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/hordeBattle', 'RouteController@hordeBattle');
+
+Route::get('/leaderboard', 'RouteController@leaderboard');
 
 Auth::routes();
 
