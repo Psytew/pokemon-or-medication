@@ -14,7 +14,7 @@
                         <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="minusOne" v-if="whichFirst" v-text="medicine"></button>
                         <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="plusOne" v-else v-text="pokemon"></button>
                     </template>
-                    <button v-on:click="submitAndReset" v-if="incrementChecker()">Play Again/Save Score</button>
+                    <button v-on:click="submitAndReset" v-if="incrementChecker()">Play Again?</button>
                 </div>
             </div>
         </div>
@@ -37,6 +37,17 @@
                 if (this.increment != 5){
                     this.increment++
                     this.score++
+                    if (this.increment == 5){
+                        axios.post('/score/' + this.userid, {
+                        userid: this.userid,
+                        score: this.score
+                    })
+                        .catch(errors => {
+                            if (errors.response.status === 401){
+                                window.location = '/login'
+                            }
+                        })
+                    }
                     this.pokemon = pokemonAPI.random();
                     this.medicine = drugs[Math.floor(Math.random() * 271)];
                     this.whichFirst = Math.floor(Math.random() * 2)
@@ -46,6 +57,17 @@
                 if (this.increment != 5){
                     this.increment++
                     this.incorrect++
+                    if (this.increment == 5){
+                        axios.post('/score/' + this.userid, {
+                        userid: this.userid,
+                        score: this.score
+                    })
+                        .catch(errors => {
+                            if (errors.response.status === 401){
+                                window.location = '/login'
+                            }
+                        })
+                    }
                     this.pokemon = pokemonAPI.random();
                     this.medicine = drugs[Math.floor(Math.random() * 271)];
                     this.whichFirst = Math.floor(Math.random() * 2)
@@ -62,15 +84,6 @@
                 }
             },
             submitAndReset(){
-                axios.post('/score/' + this.userid, {
-                    userid: this.userid,
-                    score: this.score
-                })
-                    .catch(errors => {
-                        if (errors.response.status === 401){
-                            window.location = '/login'
-                        }
-                    })
                 this.pokemon = pokemonAPI.random();
                 this.medicine = drugs[Math.floor(Math.random() * 271)];
                 this.whichFirst = Math.floor(Math.random() * 2)
