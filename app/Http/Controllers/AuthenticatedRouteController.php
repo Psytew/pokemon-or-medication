@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\user;
+use App\User;
 use Illuminate\Http\Request;
 
 class AuthenticatedRouteController extends Controller
