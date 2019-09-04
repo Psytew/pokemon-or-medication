@@ -34,10 +34,10 @@
         props:['score','pokemon','medicine','whichFirst','incorrect','increment','userid'],
         methods: {
             plusOne(){
-                if (this.increment != 5){
+                if (this.increment != 50){
                     this.increment++
                     this.score++
-                    if (this.increment == 5){
+                    if (this.increment == 50){
                         axios.post('/score/' + this.userid, {
                         userid: this.userid,
                         score: this.score
@@ -54,10 +54,10 @@
                 }
             },
             minusOne(){
-                if (this.increment != 5){
+                if (this.increment != 50){
                     this.increment++
                     this.incorrect++
-                    if (this.increment == 5){
+                    if (this.increment == 50){
                         axios.post('/score/' + this.userid, {
                         userid: this.userid,
                         score: this.score
@@ -79,7 +79,7 @@
                 this.whichFirst = Math.floor(Math.random() * 2)
             },
             incrementChecker(){
-                if (this.increment == 5){
+                if (this.increment == 50){
                     return true
                 }
             },

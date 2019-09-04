@@ -2060,11 +2060,11 @@ var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatra
   props: ['score', 'pokemon', 'medicine', 'whichFirst', 'incorrect', 'increment', 'userid'],
   methods: {
     plusOne: function plusOne() {
-      if (this.increment != 5) {
+      if (this.increment != 50) {
         this.increment++;
         this.score++;
 
-        if (this.increment == 5) {
+        if (this.increment == 50) {
           axios.post('/score/' + this.userid, {
             userid: this.userid,
             score: this.score
@@ -2081,11 +2081,11 @@ var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatra
       }
     },
     minusOne: function minusOne() {
-      if (this.increment != 5) {
+      if (this.increment != 50) {
         this.increment++;
         this.incorrect++;
 
-        if (this.increment == 5) {
+        if (this.increment == 50) {
           axios.post('/score/' + this.userid, {
             userid: this.userid,
             score: this.score
@@ -2107,7 +2107,7 @@ var drugs = ["Fosamax", "Zovirax", "Albuterol", "ProAir", "Aclovate", "U'roxatra
       this.whichFirst = Math.floor(Math.random() * 2);
     },
     incrementChecker: function incrementChecker() {
-      if (this.increment == 5) {
+      if (this.increment == 50) {
         return true;
       }
     },
