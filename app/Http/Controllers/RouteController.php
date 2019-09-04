@@ -44,7 +44,8 @@ class RouteController extends Controller
     }
 
     public function leaderboard(){
-        $users = User::all();
+        // $users = User::all();
+        $users = User::all()->sortByDesc('highscore');
         return view('leaderboard', compact('users'));
     }
 

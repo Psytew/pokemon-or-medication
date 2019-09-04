@@ -2,14 +2,16 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Pokemon or Medication?</div>
-                    <p>Correct: <span v-text="score"></span></p>
-                    <p>Incorrect: <span v-text="incorrect"></span></p>
-                    <button v-on:click="plusOne" v-if="whichFirst" v-text="pokemon"></button>
-                    <button v-on:click="minusOne" v-else v-text="medicine"></button>
-                    <button v-on:click="minusOne" v-if="whichFirst" v-text="medicine"></button>
-                    <button v-on:click="plusOne" v-else v-text="pokemon"></button>
+                <div style="height: 300px;" class="card">
+                    <div class="card-header">Pokemon or Medication? - Click on the Pokemon!</div>
+                    <div class="pt-4 pb-3 d-flex justify-content-around">
+                        <p>Correct: <span v-text="score"></span></p>
+                        <p>Incorrect: <span v-text="incorrect"></span></p>
+                    </div>
+                    <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="plusOne" v-if="whichFirst" v-text="pokemon"></button>
+                    <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="minusOne" v-else v-text="medicine"></button>
+                    <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="minusOne" v-if="whichFirst" v-text="medicine"></button>
+                    <button style="width:200px; margin: 0 auto" class="btn btn-primary mt-2 pb-2" v-on:click="plusOne" v-else v-text="pokemon"></button>
                 </div>
             </div>
         </div>
